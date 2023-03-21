@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav>
+        <div class="nav-left">
+            <p class = "logo">Profile Page</p>
+            <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active"><strong>My Profile</strong></a></li>
+            <li><a href="#">Find Connections </a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><button class="btn"><strong>Sign Out</strong></button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="about-me">
+                <div class="header">
+                    <div class="userpic"> <img src="./jane-m.jpg" alt="user-circle"></div>
+                </div>
+                <div class="name"><span id="name1">Jane Doe</span></div>
+                <div class="location"> <img src="./map-marker.png" alt="location">Seattle</div>
+                <div class="bio"> Developer | Engineer | Problem Solver <br>Master of shadows and the Internet!</div>
+                <div class="edit"> <img src="./edit.jpg" alt="settings"><button class = "btn2"onclick="changeName(name1)">edit profile</button></div>
+            </div>
+            <div class= "education">
+                <div class="header-education">
+                    Education
+                </div>
+                <div class="name-school">Coding Dojo- Full Stack Bootcamp</div>
+                <div class="time-school"> Dec 2019 - Mar 2020</div>
+                <div class="about-school"> Triple black belt in Python, Mern, and C#....</div>
+            </div>
+        </div>
+        <div class="right-sidebar">
+            <div class="request">
+                <div class="header-request">
+                    <div class="amount"><span id="requestamount">2</span></div>
+                    <div class="title">Connection Request</div>
+                </div>
+                <div class="todd flex" id="toddd"><img src="./todd-s.jpg" alt="todd"> Todd E 
+                    <div class="button">
+                        <button class ="btn2" onclick="deleteName(toddd);addConnection(requestamount,connectionamount)"><img src="./accept-circle.png" alt="accept"></button>
+                        <button class="btn2" onclick="deleteName(toddd);addConnection(requestamount)"><img src="./close-circle.png" alt="close"></button>
+                    </div>
+                </div>
+                <div class="phil" id ="phill"><img src="./phil-s.jpg" alt="phil"> Phil K
+                    <div class="button">
+                        <button class ="btn2" onclick="deleteName(phill);addConnection(requestamount,connectionamount)"><img src="./accept-circle.png" alt="accept"></button>
+                        <button class="btn2" onclick="deleteName(phill);addConnection(requestamount)"><img src="./close-circle.png" alt="close"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="connections">
+                <div class="header-connections"><div class="amount"><span id="connectionamount">472</span></div>
+                <div class="title">Your Connections</div>
+                </div>
+                <div class="adrien"><img src="./adrien-s.jpg" alt="adrien">    Adrien D</div>
+                <div class="anne"><img src="./anne-s.jpg" alt="anne">    Anne J</div>
+                <div class="alayne"><img src="./alayne-s.jpg" alt="alayne">    Alayne T</div>
+                <div class="arry"><img src="./arry-s.jpg" alt="arry">    Arry Y</div>
+                <div class="more"><a href="#">View More</a></div>
+    
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
